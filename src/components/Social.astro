@@ -1,9 +1,9 @@
 ---
-const { platform, username, title, path} = Astro.props;
+const { platform, username, title, svg} = Astro.props;
 ---
 <a href={`https://www.${platform}.com/${username}`} target="_blank">
 		<span class="sr-only">Go to Sage's {title} account</span>
-		
+		{svg}
 </a>
 <style>
   a {
