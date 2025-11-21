@@ -1,9 +1,11 @@
 ---
-const { platform, username, title, svg} = Astro.props;
+const { platform, username, title } = Astro.props;
+import Github from '../public/social/github.svg';
+import Youtube from '../public/social/youtube.svg';
 ---
 <a href={`https://www.${platform}.com/${username}`} target="_blank">
 		<span class="sr-only">Go to Sage's {title} account</span>
-		{svg}
+		<{title} />
 </a>
 <style>
   a {
