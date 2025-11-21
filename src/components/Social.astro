@@ -3,8 +3,7 @@ const { platform, username, title, path} = Astro.props;
 ---
 <a href={`https://www.${platform}.com/${username}`} target="_blank">
 		<span class="sr-only">Go to Sage's {title} account</span>
-		<svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32" astro-icon="public/social/{platform}.svg"
-			><path {path} /></svg>
+		
 </a>
 <style>
   a {
